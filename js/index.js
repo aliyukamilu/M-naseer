@@ -37,16 +37,16 @@ $('#header-area').html(`
               <a href="#about-section">About</a>
             </li>
             <li>
-              <a href="#about-section">Portfolio</a>
+              <a href="#portfolio-section">Portfolio</a>
             </li>
             <li>
-              <a href="#feature-section">Services</a>
+              <a href="#service-section">Services</a>
             </li>
             <li>
               <a href="#blog-section">Blog</a>
             </li>
             <li>
-              <a href="#blog-section">Contact Us</a>
+              <a href="#contact-section">Contact Us</a>
             </li>
           </ul>
 
