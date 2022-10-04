@@ -305,6 +305,40 @@ th {
   font-size: 18px;
 }
 
+.brands img {
+  width: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brands img:hover {
+  transform: scale(1.2);
+}
+
+.img-inline {
+  display: inline-block;
+  margin: 10px 0px 60px;
+}
+
+.about-right p {
+  font-size: 18px
+}
+
+.brand-color {
+  color: #Ff9700;
+}
+
+.serviceList {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.brands .col-sm-3 {
+  text-align: center;
+}
+
 .scroll-top {
   width: 40px;
   height: 40px;
