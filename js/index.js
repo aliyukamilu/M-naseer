@@ -34,19 +34,19 @@ $('#header-area').html(`
         <div class="dopenav">
           <ul id="nav">
             <li>
-              <a href="#banner-section">Home</a>
-            </li>
-            <li>
               <a href="#about-section">About</a>
             </li>
             <li>
-              <a href="#feature-section">Feature</a>
+              <a href="#about-section">Portfolio</a>
             </li>
             <li>
-              <a href="#testimonial-section">Testimonial</a>
+              <a href="#feature-section">Services</a>
             </li>
             <li>
               <a href="#blog-section">Blog</a>
+            </li>
+            <li>
+              <a href="#blog-section">Contact Us</a>
             </li>
           </ul>
 
