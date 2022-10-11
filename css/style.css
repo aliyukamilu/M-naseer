@@ -40,10 +40,17 @@
   color: #777777;
   font-weight: 300;
 }
-
+@font-face {
+  font-family: Raleway;
+  src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+@font-face {
+  font-family: RalewayBold;
+  src: url('../fonts/Raleway/Raleway-Bold.ttf');
+}
 body {
   color: #F7F6F6;
-  font-family: "Poppins", sans-serif;
+  font-family: Raleway;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.625em;
@@ -119,7 +126,7 @@ a:hover {
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: RalewayBold;
   color: #Ff9700;
   line-height: 1.2em !important;
   margin-bottom: 0;
@@ -132,7 +139,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: RalewayBold;
   color: #ffffff;
   line-height: 1.2em !important;
   margin-bottom: 0;
@@ -311,10 +318,12 @@ th {
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  filter: grayscale(1);
 }
 
 .brands img:hover {
   transform: scale(1.2);
+  filter: grayscale(0);
 }
 
 .img-inline {
@@ -1707,8 +1716,8 @@ th {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-box-shadow: 0px 30px 90px rgba(105, 28, 255, 0.14) !important;
-  box-shadow: 0px 30px 90px rgba(105, 28, 255, 0.14) !important;
+  -webkit-box-shadow: 0px 30px 90px rgb(255, 151, 0, 0.1) !important;
+  box-shadow: 0px 30px 90px rgb(255, 151, 0, 0.1) !important;
   color: #fff;
 }
 
