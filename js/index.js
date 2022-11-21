@@ -58,3 +58,55 @@ $('#header-area').html(`
 </div>
 </div>
 `)
+
+$('.footer-section').html(`
+<div class="container">
+<div class="row align-items-center">
+  <div class="col-lg-5 footer-left">
+    <a href="#">
+      <img src="img/logo-w.png" alt="" width="100">
+    </a>
+    <p class="copyright-text">&copy; 2022 M Naseer All right reserved.</p>
+  </div>
+  <div class="col-lg-7">
+    <ul id="social">
+      <li>
+        <a target="_blank" href="https://www.facebook.com/nass.muhammad.7">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.twitter.com/the_mnaseer">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.behance.net/M96eer?tracking_source=search_projects%7Cm96eer">
+          <i class="fa fa-behance"></i>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/the.mnaseer">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="footer-menu">
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Our Work</a>
+      </li>
+      <li>
+        <a href="#">Services</a>
+      </li>
+      <li>
+        <a href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+`)
