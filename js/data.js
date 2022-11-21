@@ -18,7 +18,7 @@ let data = [
     imgSlides: 10
   },
   {
-    id: 2,
+    id: 3,
     pjName: 'Golden Penny',
     coverImg: 'goldenpenny.jpg',
     label: 'goldenpenny',
@@ -27,7 +27,7 @@ let data = [
     imgSlides: 10
   },
   {
-    id: 2,
+    id: 4,
     pjName: 'Sufi Mart',
     coverImg: 'sufimart.jpg',
     label: 'sufimart',
@@ -59,8 +59,8 @@ if (urlId) {
     const work = data[i];
     if (work.id == urlId) {
       $('#headInfo').html(`
-        <h1>Maiduguri Cap</h1>
-        <h4>Branding</h4>
+        <h1 class='text-white'>${work.pjName}</h1>
+        <h4 class='text-white'>${work.category}</h4>
       `)
 
       $('#details').html(`
@@ -72,9 +72,12 @@ if (urlId) {
           ${work.description}
         </p>
       `)
+      let bgCover = document.querySelector('.page-top-banner')
+      bgCover.style.background = `url(./img/projects/${work.coverImg})`
+
       for (let i = 0; i < work.imgSlides; i++) {
         $("#imgSliders").append(`
-          <img class="img-fluid mb-5" src="img/projects/${work.label}/${i+1}.jpg" alt="">
+          <img class="img-fluid mb-5" src="img/projects/${work.label}/${i + 1}.jpg" alt="">
         `)
       }
 

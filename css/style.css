@@ -376,14 +376,14 @@ th {
 }
 
 
-/* .gradient-bg,
+.gradient-bg,
 .page-top-banner .overlay-bg,
 .banner-section .overlay-bg,
 .features-wrap .single-feature .overlay-bg {
     background: -moz-linear-gradient(0deg, #000000 0%, #c59b5f 100%);
     background: -webkit-linear-gradient(0deg, #000000 0%, #c59b5f 100%);
     background: -ms-linear-gradient(0deg, #000000 0% #c59b5f 100%);
-} */
+}
 
 .offwhite-bg {
   background-color: #eee;
