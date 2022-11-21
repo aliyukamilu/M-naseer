@@ -6,7 +6,7 @@ let data = [
     label: 'maiduguricaps',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusamus magni, molestiae accusantium velit eaque ipsam obcaecati delectus eos, saepe nesciunt illum perferendis quia voluptatum esse, repellendus ducimus sequi placeat!',
     category: 'Branding',
-    imgSlides: ['1.jpg', '2.jpg', '4.jpg', '5.jpg']
+    imgSlides: 10
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ let data = [
     label: 'rejuvenate',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusamus magni, molestiae accusantium velit eaque ipsam obcaecati delectus eos, saepe nesciunt illum perferendis quia voluptatum esse, repellendus ducimus sequi placeat!',
     category: 'Branding',
-    imgSlides: ['1.jpg', '2.jpg', '4.jpg', '5.jpg']
+    imgSlides: 10
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ let data = [
     label: 'goldenpenny',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusamus magni, molestiae accusantium velit eaque ipsam obcaecati delectus eos, saepe nesciunt illum perferendis quia voluptatum esse, repellendus ducimus sequi placeat!',
     category: 'Branding',
-    imgSlides: ['1.jpg', '2.jpg', '4.jpg', '5.jpg']
+    imgSlides: 10
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ let data = [
     label: 'sufimart',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum accusamus magni, molestiae accusantium velit eaque ipsam obcaecati delectus eos, saepe nesciunt illum perferendis quia voluptatum esse, repellendus ducimus sequi placeat!',
     category: 'Branding',
-    imgSlides: ['1.jpg', '2.jpg', '4.jpg', '5.jpg']
+    imgSlides: 10
   }
 ]
 
@@ -72,6 +72,12 @@ if (urlId) {
           ${work.description}
         </p>
       `)
+      for (let i = 0; i < work.imgSlides; i++) {
+        $("#imgSliders").append(`
+          <img class="img-fluid mb-5" src="img/projects/${work.label}/${i+1}.jpg" alt="">
+        `)
+      }
+
       break;
     }
   }

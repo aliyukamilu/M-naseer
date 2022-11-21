@@ -2325,7 +2325,8 @@ th {
 .product-detials-section .details-right {
   padding-bottom: 20px;
   position: sticky;
-  top: 0
+  position: -webkit-sticky;
+  top: 100px
 }
 
 .product-detials-section .details-right ul {
