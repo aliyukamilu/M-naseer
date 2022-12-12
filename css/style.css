@@ -40,14 +40,17 @@
   color: #777777;
   font-weight: 300;
 }
+
 @font-face {
   font-family: Raleway;
   src: url('../fonts/Raleway/Raleway-Regular.ttf');
 }
+
 @font-face {
   font-family: RalewayBold;
   src: url('../fonts/Raleway/Raleway-Bold.ttf');
 }
+
 body {
   color: #F7F6F6;
   font-family: Raleway;
@@ -306,6 +309,13 @@ th {
   margin-right: 0;
 }
 
+.limitedText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
 /* /*  Common Styles  */
 
 .banner-left p {
@@ -380,9 +390,9 @@ th {
 .page-top-banner .overlay-bg,
 .banner-section .overlay-bg,
 .features-wrap .single-feature .overlay-bg {
-    background: -moz-linear-gradient(0deg, #000000 0%, #c59b5f 100%);
-    background: -webkit-linear-gradient(0deg, #000000 0%, #c59b5f 100%);
-    background: -ms-linear-gradient(0deg, #000000 0% #c59b5f 100%);
+  background: -moz-linear-gradient(0deg, #000000 0%, #c59b5f 100%);
+  background: -webkit-linear-gradient(0deg, #000000 0%, #c59b5f 100%);
+  background: -ms-linear-gradient(0deg, #000000 0% #c59b5f 100%);
 }
 
 .offwhite-bg {

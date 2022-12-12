@@ -110,3 +110,48 @@ $('.footer-section').html(`
 </div>
 </div>
 `)
+
+let the_token_here = "IGQVJYUmxjcllvQUhzd2I2VWNhTVY3eEZA2dGZAobjdaMEdzTDkxeFY0TUVfNlRtSU9XbEVmb1JIVHRuZA19WS09hRlE3TUUyeEVFMnJxQW9kWDg4YXJqN3BaVlRUYW1ZAQVdOT2JxcUdmeHEycWFYWmV5VgZDZD"
+let the_url = "https://graph.instagram.com"
+async function getPosts() {
+  try {
+
+  } catch (error) {
+
+  }
+  const response = await fetch(`${the_url}/me/media?fields=id,caption&access_token=${the_token_here}`)
+  const data = await response.json()
+
+  for (let i = 0; i < data.data.length; i++) {
+    const posto = data.data[i];
+
+    (async () => {
+      const response2 = await fetch(`${the_url}/${posto.id}?fields=media_url,caption,permalink&access_token=${the_token_here}`)
+      const data2 = await response2.json()
+
+      $("#showThePost").append(`
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="${data2.permalink}">
+            <div class="single-blog">
+              <div class="overlay overlay-bg"></div>
+              <img class="img-fluid" src=${data2.media_url} alt="">
+              <div class="blog-post-details">
+                
+                <a href="${data2.permalink}">
+                  <h6 class="limitedText">${data2.caption}</h6>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
+      `)
+    })()
+
+    if (i === 5) {
+      break
+    }
+  }
+
+}
+
+getPosts()
